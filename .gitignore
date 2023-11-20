@@ -23,15 +23,18 @@
 *.lib
 
 # Executables
+*.exe
 *.out
 *.app
 
 # Visual Studio
 .vs/
 .vscode/
+*.vcxproj.user
 *.vcxproj.filters
 
 # Build results
 [Bb]uild/
 [Bb]in/
 [Bb]in-int/
+[Bb]inaries/
