@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34219.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PS4SprxTemplate", "PS4SprxTemplate\PS4SprxTemplate.vcxproj", "{7C232502-40B7-4B90-88DD-AF4D0EED1E1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ORBIS = Debug|ORBIS
+		Release|ORBIS = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C232502-40B7-4B90-88DD-AF4D0EED1E1D}.Debug|ORBIS.ActiveCfg = Debug|ORBIS
+		{7C232502-40B7-4B90-88DD-AF4D0EED1E1D}.Debug|ORBIS.Build.0 = Debug|ORBIS
+		{7C232502-40B7-4B90-88DD-AF4D0EED1E1D}.Release|ORBIS.ActiveCfg = Release|ORBIS
+		{7C232502-40B7-4B90-88DD-AF4D0EED1E1D}.Release|ORBIS.Build.0 = Release|ORBIS
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAF46D40-FDE0-4D22-AE68-01A10A56F131}
+	EndGlobalSection
+EndGlobal
