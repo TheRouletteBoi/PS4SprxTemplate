@@ -59,6 +59,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
+      <CppExceptions>true</CppExceptions>
     </ClCompile>
     <Link>
       <Addressing>NonAslr</Addressing>
@@ -78,6 +79,7 @@
       <OptimizationLevel>Level3</OptimizationLevel>
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
+      <CppExceptions>true</CppExceptions>
     </ClCompile>
     <PostBuildEvent>
       <Command>$(SolutionDir)dependencies\binaries\make_fself\make_fself.exe "$(TargetDir)$(TargetName)$(TargetExt)" "$(TargetDir)$(TargetName).sprx"</Command>
@@ -91,7 +93,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="FileManager\CacheFile.cpp" />
+    <ClCompile Include="FileManager\File.cpp" />
+    <ClCompile Include="FileManager\FileManager.cpp" />
+    <ClCompile Include="FileManager\Folder.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Memory\Module.cpp" />
+    <ClCompile Include="Memory\Pattern.cpp" />
+    <ClCompile Include="Memory\Range.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FileManager\CacheFile.hpp" />
+    <ClInclude Include="FileManager\File.hpp" />
+    <ClInclude Include="FileManager\FileManager.hpp" />
+    <ClInclude Include="FileManager\Folder.hpp" />
+    <ClInclude Include="Memory\All.hpp" />
+    <ClInclude Include="Memory\Batch.hpp" />
+    <ClInclude Include="Memory\Fwddec.hpp" />
+    <ClInclude Include="Memory\Handle.hpp" />
+    <ClInclude Include="Memory\Module.hpp" />
+    <ClInclude Include="Memory\Pattern.hpp" />
+    <ClInclude Include="Memory\Range.hpp" />
+    <ClInclude Include="Memory\Signature.hpp" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
