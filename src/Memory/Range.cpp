@@ -1,5 +1,5 @@
-#include "Range.hpp"
-#include "Pattern.hpp"
+#include "range.hpp"
+#include "pattern.hpp"
 
 namespace memory
 {

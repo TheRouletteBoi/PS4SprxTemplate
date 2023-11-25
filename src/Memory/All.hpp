@@ -1,8 +1,8 @@
 #pragma once
 
-#include "Batch.hpp"
-#include "Handle.hpp"
-#include "Module.hpp"
-#include "Pattern.hpp"
-#include "Range.hpp"
-#include "Signature.hpp"
+#include "batch.hpp"
+#include "handle.hpp"
+#include "module.hpp"
+#include "pattern.hpp"
+#include "range.hpp"
+#include "signature.hpp"

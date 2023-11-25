@@ -60,6 +60,7 @@
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
       <CppExceptions>true</CppExceptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <Addressing>NonAslr</Addressing>
@@ -80,6 +81,7 @@
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
       <CppExceptions>true</CppExceptions>
+      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PostBuildEvent>
       <Command>$(SolutionDir)dependencies\binaries\make_fself\make_fself.exe "$(TargetDir)$(TargetName)$(TargetExt)" "$(TargetDir)$(TargetName).sprx"</Command>
@@ -93,28 +95,30 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FileManager\CacheFile.cpp" />
-    <ClCompile Include="FileManager\File.cpp" />
-    <ClCompile Include="FileManager\FileManager.cpp" />
-    <ClCompile Include="FileManager\Folder.cpp" />
+    <ClCompile Include="file_manager\cache_file.cpp" />
+    <ClCompile Include="file_manager\file.cpp" />
+    <ClCompile Include="file_manager\file_manager.cpp" />
+    <ClCompile Include="file_manager\folder.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Memory\Module.cpp" />
-    <ClCompile Include="Memory\Pattern.cpp" />
-    <ClCompile Include="Memory\Range.cpp" />
+    <ClCompile Include="memory\module.cpp" />
+    <ClCompile Include="memory\pattern.cpp" />
+    <ClCompile Include="memory\range.cpp" />
+    <ClCompile Include="offsets\pointers.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FileManager\CacheFile.hpp" />
-    <ClInclude Include="FileManager\File.hpp" />
-    <ClInclude Include="FileManager\FileManager.hpp" />
-    <ClInclude Include="FileManager\Folder.hpp" />
-    <ClInclude Include="Memory\All.hpp" />
-    <ClInclude Include="Memory\Batch.hpp" />
-    <ClInclude Include="Memory\Fwddec.hpp" />
-    <ClInclude Include="Memory\Handle.hpp" />
-    <ClInclude Include="Memory\Module.hpp" />
-    <ClInclude Include="Memory\Pattern.hpp" />
-    <ClInclude Include="Memory\Range.hpp" />
-    <ClInclude Include="Memory\Signature.hpp" />
+    <ClInclude Include="file_manager\cache_file.hpp" />
+    <ClInclude Include="file_manager\file.hpp" />
+    <ClInclude Include="file_manager\file_manager.hpp" />
+    <ClInclude Include="file_manager\folder.hpp" />
+    <ClInclude Include="memory\all.hpp" />
+    <ClInclude Include="memory\batch.hpp" />
+    <ClInclude Include="memory\fwddec.hpp" />
+    <ClInclude Include="memory\handle.hpp" />
+    <ClInclude Include="memory\module.hpp" />
+    <ClInclude Include="memory\pattern.hpp" />
+    <ClInclude Include="memory\range.hpp" />
+    <ClInclude Include="memory\signature.hpp" />
+    <ClInclude Include="offsets\pointers.hpp" />
   </ItemGroup>
   <Import Condition="'$(ConfigurationType)' == 'Makefile' and Exists('$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets')" Project="$(VCTargetsPath)\Platforms\$(Platform)\SCE.Makefile.$(Platform).targets" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

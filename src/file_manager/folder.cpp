@@ -1,5 +1,5 @@
-#include "Folder.hpp"
-#include "FileManager.hpp"
+#include "folder.hpp"
+#include "file_manager.hpp"
 
 namespace Nutella
 {

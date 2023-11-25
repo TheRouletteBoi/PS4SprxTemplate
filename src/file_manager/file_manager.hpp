@@ -1,6 +1,6 @@
 #pragma once
-#include "File.hpp"
-#include "Folder.hpp"
+#include "file.hpp"
+#include "folder.hpp"
 
 namespace Nutella
 {

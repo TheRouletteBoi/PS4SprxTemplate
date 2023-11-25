@@ -1,4 +1,4 @@
-#include "Pattern.hpp"
+#include "pattern.hpp"
 
 namespace memory
 {

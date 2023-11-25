@@ -1,7 +1,7 @@
 #pragma once
-#include "Pattern.hpp"
-#include "Range.hpp"
-#include "Signature.hpp"
+#include "pattern.hpp"
+#include "range.hpp"
+#include "signature.hpp"
 
 #include <array>
 #include <future>

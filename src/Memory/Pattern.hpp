@@ -1,6 +1,6 @@
 #pragma once
-#include "Fwddec.hpp"
-#include "Handle.hpp"
+#include "fwddec.hpp"
+#include "handle.hpp"
 
 #include <cstdint>
 #include <optional>

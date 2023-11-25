@@ -1,4 +1,4 @@
-#include "Module.hpp"
+#include "module.hpp"
 #include <thread>
 
 namespace memory

@@ -1,5 +1,5 @@
-#include "File.hpp"
-#include "FileManager.hpp"
+#include "file.hpp"
+#include "file_manager.hpp"
 
 #include <_fs.h>
 
