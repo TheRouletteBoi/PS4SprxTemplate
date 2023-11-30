@@ -1,0 +1,3 @@
+[submodule "dependencies/OrbisKernel"]
+	path = dependencies/OrbisKernel
+	url = https://github.com/TheRouletteBoi/OrbisKernel.git
