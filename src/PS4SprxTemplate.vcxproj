@@ -60,12 +60,14 @@
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
       <CppExceptions>true</CppExceptions>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)dependencies\OrbisKernel\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <Addressing>NonAslr</Addressing>
       <GenerateMapFile>true</GenerateMapFile>
       <MapFileName>$(IntDir)$(TargetName).map</MapFileName>
+      <AdditionalDependencies>-lkernel_gen_stub_weak;-lkernel_sys_gen_stub_weak;-lmonosgen_gen_stub_weak;-lSceAppInstUtil_gen_stub_weak;-lSceLibcInternal_gen_stub_weak;-lSceLncUtil_gen_stub_weak;-lSceNet_gen_stub_weak;-lSceRtc_gen_stub_weak;-lSceShellCoreUtil_gen_stub_weak;-lSceSysCore_gen_stub_weak;-lSceSysmodule_gen_stub_weak;-lSceSystemService_gen_stub_weak;-lSceSystemStateMgr_gen_stub_weak;-lSceUserService_gen_stub_weak;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies\OrbisKernel\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>$(SolutionDir)dependencies\binaries\make_fself\make_fself.exe "$(TargetDir)$(TargetName)$(TargetExt)" "$(TargetDir)$(TargetName).sprx"</Command>
@@ -81,7 +83,7 @@
       <CppLanguageStd>Cpp17</CppLanguageStd>
       <CLanguageStd>C11</CLanguageStd>
       <CppExceptions>true</CppExceptions>
-      <AdditionalIncludeDirectories>$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)dependencies\OrbisKernel\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <PostBuildEvent>
       <Command>$(SolutionDir)dependencies\binaries\make_fself\make_fself.exe "$(TargetDir)$(TargetName)$(TargetExt)" "$(TargetDir)$(TargetName).sprx"</Command>
@@ -92,6 +94,8 @@
     <Link>
       <DataStripping>StripFuncsAndData</DataStripping>
       <InfoStripping>StripDebug</InfoStripping>
+      <AdditionalDependencies>-lkernel_gen_stub_weak;-lkernel_sys_gen_stub_weak;-lmonosgen_gen_stub_weak;-lSceAppInstUtil_gen_stub_weak;-lSceLibcInternal_gen_stub_weak;-lSceLncUtil_gen_stub_weak;-lSceNet_gen_stub_weak;-lSceRtc_gen_stub_weak;-lSceShellCoreUtil_gen_stub_weak;-lSceSysCore_gen_stub_weak;-lSceSysmodule_gen_stub_weak;-lSceSystemService_gen_stub_weak;-lSceSystemStateMgr_gen_stub_weak;-lSceUserService_gen_stub_weak;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)dependencies\OrbisKernel\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -100,6 +104,7 @@
     <ClCompile Include="file_manager\file_manager.cpp" />
     <ClCompile Include="file_manager\folder.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="memory\batch.cpp" />
     <ClCompile Include="memory\module.cpp" />
     <ClCompile Include="memory\pattern.cpp" />
     <ClCompile Include="memory\range.cpp" />
@@ -114,6 +119,7 @@
     <ClInclude Include="memory\batch.hpp" />
     <ClInclude Include="memory\fwddec.hpp" />
     <ClInclude Include="memory\handle.hpp" />
+    <ClInclude Include="memory\memory.hpp" />
     <ClInclude Include="memory\module.hpp" />
     <ClInclude Include="memory\pattern.hpp" />
     <ClInclude Include="memory\range.hpp" />

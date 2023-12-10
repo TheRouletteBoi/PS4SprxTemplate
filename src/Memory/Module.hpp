@@ -2,9 +2,14 @@
 #include "range.hpp"
 #include <optional>
 #include <chrono>
+#include <OrbisKernel/KernelExt.h>
 
 namespace memory
 {
+    // TODO(Roulette): move this else where
+    int GetModuleSize(SceKernelModuleInfo info);
+    uint64_t MemoryToIDA(const void* address);
+
     class module : public range
     {
     public:

@@ -7,6 +7,7 @@ namespace memory
         m_base(base),
         m_size(size)
     {
+        printf("memory: m_base %p m_size %p\n", m_base, m_size);
     }
 
     handle range::begin() const
